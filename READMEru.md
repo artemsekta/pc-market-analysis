@@ -1,3 +1,5 @@
+[Русский](README.md) | [English](README.en.md)
+
 # Анализ рынка персональных компьютеров
 
 **Исследование данных · Статистика · Machine Learning**
@@ -148,7 +150,7 @@ pc-market-analysis/
 
 ## Запуск проекта
 
-Для воспроизведения исследования потребуются Python, расширения **Python** и **Jupyter** для Visual Studio Code, а также файл с исходными данными.
+Для воспроизведения исследования потребуются Python, Visual Studio Code с расширениями Python и Jupyter, а также файл с исходными данными.
 
 ### 1. Клонировать репозиторий
 
@@ -157,7 +159,18 @@ git clone https://github.com/artemsekta/pc-market-analysis.git
 cd pc-market-analysis
 ```
 
-### 2. Создать виртуальное окружение
+### 2. Установить расширения VS Code
+
+Расширения можно установить через терминал:
+
+```powershell
+code --install-extension ms-python.python
+code --install-extension ms-toolsai.jupyter
+```
+
+Либо через панель Extensions в Visual Studio Code, найдя расширения **Python** и **Jupyter**.
+
+### 3. Создать виртуальное окружение
 
 ```bash
 python -m venv .venv
@@ -175,13 +188,13 @@ python -m venv .venv
 source .venv/bin/activate
 ```
 
-### 3. Установить зависимости
+### 4. Установить зависимости
 
 ```bash
 python -m pip install -r requirements.txt
 ```
 
-### 4. Открыть проект в VS Code
+### 5. Открыть проект в VS Code
 
 ```bash
 code .
