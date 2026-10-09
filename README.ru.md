@@ -1,4 +1,4 @@
-[Русский](README.md) | [English](README.en.md)
+[Русский](README.ru.md) | [English](README.md)
 
 # Анализ рынка персональных компьютеров
 
