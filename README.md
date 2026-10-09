@@ -5,7 +5,7 @@
 Итоговый проект программы «Специалист по искусственному интеллекту и машинному обучению» Томского государственного университета.
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Python-3.13.5-3776AB?logo=python&logoColor=white" alt="Python" />
   <img src="https://img.shields.io/badge/NumPy-2.5.3-013243?logo=numpy&logoColor=white" alt="NumPy" />
   <img src="https://img.shields.io/badge/Pandas-3.0.6-150458?logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/SciPy-1.18.1-8CAAE6?logo=scipy&logoColor=white" alt="SciPy" />
@@ -148,12 +148,12 @@ pc-market-analysis/
 
 ## Запуск проекта
 
-Для воспроизведения исследования потребуются Python и Jupyter Notebook.
+Для воспроизведения исследования потребуются Python, расширения **Python** и **Jupyter** для Visual Studio Code, а также файл с исходными данными.
 
 ### 1. Клонировать репозиторий
 
 ```bash
-git clone <URL-репозитория>
+git clone https://github.com/artemsekta/pc-market-analysis.git
 cd pc-market-analysis
 ```
 
@@ -165,8 +165,8 @@ python -m venv .venv
 
 Активировать окружение в Windows:
 
-```bash
-.venv\Scripts\activate
+```powershell
+.venv\Scripts\Activate.ps1
 ```
 
 В Linux или macOS:
@@ -179,16 +179,17 @@ source .venv/bin/activate
 
 ```bash
 python -m pip install -r requirements.txt
-python -m pip install jupyter
 ```
 
-### 4. Запустить Jupyter Notebook
+### 4. Открыть проект в VS Code
 
 ```bash
-jupyter notebook
+code .
 ```
 
-Открыть `analysis.ipynb` и последовательно выполнить ячейки.
+Открыть файл `analysis.ipynb`. Если VS Code не выбрал виртуальное окружение автоматически, нажать **Select Kernel** в правом верхнем углу ноутбука и выбрать интерпретатор Python из `.venv`.
+
+После выбора ядра последовательно выполнить ячейки ноутбука.
 
 Для воспроизведения исследования необходим файл `data/wb_pc_hard.csv`, расположенный по пути, который используется в ноутбуке.
 
